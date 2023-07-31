@@ -26,21 +26,21 @@ $(".cate_choices").click(function(){
             slidesToScroll: 1,
             infinite: true,
             prevArrow: false,
-    nextArrow: false,
+            nextArrow: false,
           }
         },
         {
           breakpoint: 600,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToScroll: 2,
           }
         },
         {
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
           }
         }
         
@@ -98,13 +98,6 @@ $(".cate_choices").click(function(){
             slidesToScroll: 1,
             infinite: true,
             dots: false
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
           }
         },
         {

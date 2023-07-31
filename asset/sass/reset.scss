@@ -28,7 +28,7 @@ footer, header, hgroup, menu, nav, section {
 section{
 	padding:60px 0;
 	@media (max-width: $xs-max) {
-	padding:60px 3px;
+		padding:60px 3px;
 		
 	}
 }
