@@ -30,6 +30,11 @@ footer, header, hgroup, menu, nav, section {
 section {
   padding: 60px 0;
 }
+@media (max-width: 767px) {
+  section {
+    padding: 60px 3px;
+  }
+}
 
 body {
   line-height: 1;
@@ -648,6 +653,7 @@ body {
   margin-top: 60px;
 }
 .topic .list_topic .topic_item {
+  margin: 0 8px;
   height: 186px;
   margin-bottom: 170px;
   background-image: url(../img/nền.png);
