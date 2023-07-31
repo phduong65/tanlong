@@ -868,7 +868,6 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            max-width: 288px;
             border-radius: 5px;
             background-color: $cl_white;
             overflow: hidden;
@@ -1062,7 +1061,7 @@ body {
 }
 
 .footer {
-    padding: 60px 0;
+    padding: 60px 2px;
     background-color: $cl_green;
 
     .col_footer {

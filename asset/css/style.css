@@ -779,7 +779,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 288px;
   border-radius: 5px;
   background-color: #fff;
   overflow: hidden;
@@ -952,7 +951,7 @@ body {
 }
 
 .footer {
-  padding: 60px 0;
+  padding: 60px 2px;
   background-color: #4BB551;
 }
 .footer .col_footer {

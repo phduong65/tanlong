@@ -25,6 +25,8 @@ $(".cate_choices").click(function(){
             slidesToShow: 2,
             slidesToScroll: 1,
             infinite: true,
+            prevArrow: false,
+    nextArrow: false,
           }
         },
         {
