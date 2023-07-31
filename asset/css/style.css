@@ -830,6 +830,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
+  display: flex;
   /* 112.5% */
 }
 .news .news_list .news_item .box_news .btn_see_news img {
