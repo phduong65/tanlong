@@ -52,6 +52,9 @@ body {
                 align-items: center;
                 flex-direction: row;
                 gap: 10px;
+                @media (max-width: $xs-max) {
+                    padding: 0 60px;
+                }
             }
 
 
@@ -421,6 +424,7 @@ body {
 }
 
 .service {
+    padding-bottom: 0;
     .list_services {
         display: flex;
         flex-direction: row;
@@ -428,7 +432,7 @@ body {
         align-items: center;
         gap: 16px;
         .item_service {
-            margin: 20px 10px;
+            margin: 0px 10px;
             width: 288px;
             align-items: center;
             height: 96px;
@@ -439,7 +443,9 @@ body {
             border-radius: 5px;
             border: 1px solid #CED4DA;
             transition: .1s ease-in-out;
-
+            @media (max-width: $xs-max) {
+                padding: 24px 60px;
+            }
             &:hover {
                 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                 transform: scale(1.01)
@@ -888,7 +894,9 @@ body {
             align-items: center;
             flex-direction: column;
             position: relative;
-
+            @media (max-width: $xs-max) {
+                border-radius: 25px;
+            }
             .box_topic {
                 position: absolute;
                 transition: .3s linear;
@@ -967,6 +975,14 @@ body {
     }
     @media (max-width: $xs-max) {
         display: block;
+        .slick-slider {
+            margin:0 -10px !important;
+        }
+        .slick-slide {
+            text-align:left !important;
+            margin-right:10px !important;
+            margin-left:10px !important;
+        }
     }
 }
 .introduce {
@@ -1121,11 +1137,18 @@ body {
                     font-weight: 700;
                     line-height: 18px;
                     display: flex;
-
+                    justify-content: center;
+                    align-items: center;
                     /* 112.5% */
                     img {
                         width: 16px;
                         padding-left: 6px;
+                        @media (max-width: $xs-max) {
+                            width: 8px;
+                            height: 8px;
+                            padding: 0;
+                            margin-left: 5px;
+                        }
                     }
                 }
             }
@@ -1214,13 +1237,10 @@ body {
 
         .register_form {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             gap: 16px;
             height: 48px;
-
-
-
             input {
                 height: 100%;
                 padding: 16px;
@@ -1268,7 +1288,7 @@ body {
                 flex-direction: column;
                 height: auto;
                 width: 100%;
-                padding: 0 20px;
+                padding:20px;
                 #name {
                     width: 100%;
                 }
@@ -1342,6 +1362,9 @@ body {
                     font-weight: 400;
                     line-height: 24px;
                     /* 150% */
+                    &:hover{
+                        color: $cl_yellow_dark;
+                    }
                 }
             }
         }

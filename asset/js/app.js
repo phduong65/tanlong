@@ -64,7 +64,7 @@ $(".cate_choices").click(function(){
   $('.sp_list_item_mb').slick({
     dots: false,
     infinite: true,
-    // autoplay:true,
+    autoplay:true,
     autoplaySpeed:1500,
     speed: 300,
     margin:16,
@@ -93,7 +93,7 @@ $(".cate_choices").click(function(){
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1,
             prevArrow: false,
             nextArrow: false,

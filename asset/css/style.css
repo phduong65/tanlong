@@ -112,6 +112,11 @@ body {
   flex-direction: row;
   gap: 10px;
 }
+@media (max-width: 767px) {
+  .header .top_header .contact .contact_item {
+    padding: 0 60px;
+  }
+}
 .header .top_header .contact img {
   width: 16px;
   height: 16px;
@@ -408,6 +413,9 @@ body {
   width: 100%;
 }
 
+.service {
+  padding-bottom: 0;
+}
 .service .list_services {
   display: flex;
   flex-direction: row;
@@ -416,7 +424,7 @@ body {
   gap: 16px;
 }
 .service .list_services .item_service {
-  margin: 20px 10px;
+  margin: 0px 10px;
   width: 288px;
   align-items: center;
   height: 96px;
@@ -427,6 +435,11 @@ body {
   border-radius: 5px;
   border: 1px solid #CED4DA;
   transition: 0.1s ease-in-out;
+}
+@media (max-width: 767px) {
+  .service .list_services .item_service {
+    padding: 24px 60px;
+  }
 }
 .service .list_services .item_service:hover {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -795,6 +808,11 @@ body {
   flex-direction: column;
   position: relative;
 }
+@media (max-width: 767px) {
+  .topic .list_topic .topic_item {
+    border-radius: 25px;
+  }
+}
 .topic .list_topic .topic_item .box_topic {
   position: absolute;
   transition: 0.3s linear;
@@ -863,6 +881,14 @@ body {
 @media (max-width: 767px) {
   .san_pham_mb {
     display: block;
+  }
+  .san_pham_mb .slick-slider {
+    margin: 0 -10px !important;
+  }
+  .san_pham_mb .slick-slide {
+    text-align: left !important;
+    margin-right: 10px !important;
+    margin-left: 10px !important;
   }
 }
 
@@ -999,11 +1025,21 @@ body {
   font-weight: 700;
   line-height: 18px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   /* 112.5% */
 }
 .news .news_list .news_item .box_news .btn_see_news img {
   width: 16px;
   padding-left: 6px;
+}
+@media (max-width: 767px) {
+  .news .news_list .news_item .box_news .btn_see_news img {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    margin-left: 5px;
+  }
 }
 
 .register {
@@ -1079,7 +1115,7 @@ body {
 }
 .register .register_title .register_form {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 16px;
   height: 48px;
@@ -1126,7 +1162,7 @@ body {
     flex-direction: column;
     height: auto;
     width: 100%;
-    padding: 0 20px;
+    padding: 20px;
   }
   .register .register_title .register_form #name {
     width: 100%;
@@ -1192,6 +1228,9 @@ body {
   font-weight: 400;
   line-height: 24px;
   /* 150% */
+}
+.footer .col_footer .colm .list_item a:hover {
+  color: #FFD400;
 }
 .footer .col_footer .footer_1 {
   display: flex;
