@@ -1158,6 +1158,9 @@ body {
   /* 200% */
 }
 
+.search_mb {
+  display: none;
+}
 .search_mb .search_form_mb {
   display: flex;
   width: 100%;
@@ -1177,6 +1180,11 @@ body {
   background-color: #4BB551;
   border: 1px solid transparent;
   color: #fff;
+}
+@media (max-width: 767px) {
+  .search_mb {
+    display: block;
+  }
 }
 
 @keyframes phoneRotate {

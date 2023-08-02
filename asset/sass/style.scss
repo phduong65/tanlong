@@ -1326,6 +1326,7 @@ body {
     /* 200% */
 }
 .search_mb{
+    display: none;
     .search_form_mb{
         display: flex;
         width: 100%;
@@ -1346,6 +1347,9 @@ body {
             color: $cl_white;
 
         }
+    }
+    @media (max-width:$xs-max) {
+        display: block;
     }
 }
 
