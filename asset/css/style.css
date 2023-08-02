@@ -79,6 +79,7 @@ body {
 @media (max-width: 767px) {
   .navbar_humberger {
     display: block;
+    position: relative;
   }
 }
 
@@ -127,7 +128,16 @@ body {
 }
 @media (max-width: 767px) {
   .header .top_header {
+    flex-direction: column;
+  }
+  .header .top_header .contact {
+    flex-direction: column;
+  }
+  .header .top_header .contact .email {
     display: none;
+  }
+  .header .top_header .social_link {
+    display: none !important;
   }
 }
 
@@ -402,11 +412,13 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   gap: 16px;
 }
 .service .list_services .item_service {
   margin: 20px 10px;
   width: 288px;
+  align-items: center;
   height: 96px;
   display: flex;
   justify-content: space-between;
@@ -419,6 +431,11 @@ body {
 .service .list_services .item_service:hover {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   transform: scale(1.01);
+}
+.service .list_services .item_service .title_service {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .service .list_services .item_service .title_service .name {
   color: #333;
@@ -439,11 +456,6 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-}
-@media (max-width: 767px) {
-  .top_ad {
-    padding: 0 20px;
-  }
 }
 .top_ad .top_name_ad {
   color: #A3A3A3;
@@ -475,7 +487,12 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  padding: 4px 20px;
   gap: 8px;
+}
+.top_ad .main_name_ad .seemr a:hover {
+  color: #FFE500;
+  border-radius: 20px;
 }
 .top_ad .main_name_ad .seemr a img {
   width: 24px;
@@ -496,6 +513,26 @@ body {
   content: "";
   background-color: #FFB800;
 }
+@media (max-width: 767px) {
+  .top_ad {
+    padding: 0 20px;
+  }
+  .top_ad .top_name_ad {
+    font-size: 12px;
+  }
+  .top_ad .main_name_ad {
+    font-size: 18px;
+    align-items: center;
+  }
+  .top_ad .main_name_ad .seemr a {
+    font-size: 12px;
+    color: #fff;
+  }
+  .top_ad .main_name_ad .seemr a img {
+    width: 16px;
+    height: 16px;
+  }
+}
 
 .box_san_pham {
   display: flex;
@@ -506,6 +543,7 @@ body {
 @media (max-width: 767px) {
   .box_san_pham {
     flex-direction: column;
+    display: block;
   }
   .box_san_pham .sp_inner {
     display: none;
@@ -592,6 +630,12 @@ body {
   transition: 0.3s ease-in-out;
 }
 
+@media (max-width: 767px) {
+  .san_pham {
+    display: none;
+  }
+}
+
 .card_item {
   border: 1px solid transparent;
 }
@@ -676,8 +720,17 @@ body {
 .sp_noi_bat .sp_noi_bat_list {
   margin: 32px 0;
 }
+.sp_noi_bat .sp_noi_bat_list .slick-slider {
+  margin: 0 -25px;
+}
+.sp_noi_bat .sp_noi_bat_list .slick-slide {
+  padding: 10px;
+  background-color: red;
+  text-align: center;
+  margin-right: 25px;
+  margin-left: 25px;
+}
 .sp_noi_bat .sp_noi_bat_list .item {
-  margin: 0 8px !important;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -777,6 +830,40 @@ body {
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.san_pham_mb {
+  display: none;
+}
+.san_pham_mb .sp_list_item_mb {
+  margin: 20px 0;
+}
+.san_pham_mb .sp_list_item_mb .slick-slider {
+  margin: 0 -15px;
+}
+.san_pham_mb .sp_list_item_mb .slick-slide {
+  padding: 10px;
+  text-align: center;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.san_pham_mb .sp_list_item_mb .item .card_item {
+  border: 1px solid #CED4DA;
+  border-radius: 5px;
+}
+.san_pham_mb .sp_list_item_mb .item .card_item:hover {
+  border: 1px solid #4BB551;
+}
+.san_pham_mb .sp_list_item_mb .item .card_item .box_img {
+  overflow: hidden;
+}
+.san_pham_mb .sp_list_item_mb .item .card_item .box_img img {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .san_pham_mb {
+    display: block;
+  }
 }
 
 .introduce {
@@ -1026,16 +1113,20 @@ body {
   border: none;
   border-radius: 5px;
   color: #fff;
-  font-size: 14px;
+  font-size: 18px;
+  text-transform: uppercase;
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
+  width: 100%;
   /* 128.571% */
 }
 @media (max-width: 767px) {
   .register .register_title .register_form {
     flex-direction: column;
     height: auto;
+    width: 100%;
+    padding: 0 20px;
   }
   .register .register_title .register_form #name {
     width: 100%;
@@ -1142,6 +1233,7 @@ body {
   .footer .col_footer {
     flex-wrap: wrap;
     padding: 0 20px;
+    gap: 40px;
   }
 }
 

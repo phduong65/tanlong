@@ -47,9 +47,9 @@
   .nav-container .checkbox {
     position: absolute;
     display: block;
-    height: 32px;
-    width: 32px;
-    top: 20px;
+    height: 18px;
+    width: 24px;
+    top: 22px;
     left: 20px;
     z-index: 5;
     opacity: 0;
@@ -58,10 +58,10 @@
   
   .nav-container .hamburger-lines {
     display: block;
-    height: 26px;
-    width: 32px;
+    height: 19px;
+    width: 22px;
     position: absolute;
-    top: 17px;
+    top: 22px;
     left: 20px;
     z-index: 2;
     display: flex;
@@ -140,7 +140,6 @@
   
   .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
     transform: rotate(45deg);
-    background-color: #fff;
   }
   
   .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
@@ -149,9 +148,5 @@
   
   .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     transform: rotate(-45deg);
-    background-color: #fff;
   }
   
-  .nav-container input[type="checkbox"]:checked ~ .logo{
-    display: none;
-  }
