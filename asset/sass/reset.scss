@@ -28,7 +28,7 @@ footer, header, hgroup, menu, nav, section {
 section{
 	padding:60px 0;
 	@media (max-width: $xs-max) {
-		padding:60px 3px;
+		padding:30px 3px;
 		
 	}
 }
@@ -53,8 +53,8 @@ table {
 .container{
     max-width: 1200px;
 	padding: 0;
-	height: 100%;
 	margin: 0 auto;
+	
 }
 a{
 	text-decoration: none;

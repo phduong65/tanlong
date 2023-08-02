@@ -11,13 +11,26 @@ $(".cate_choices").click(function(){
   })
 
 
+  $('.slide_banner').slick({
+    dots: false,
+    infinite: true,
+    autoplay:true,
+    autoplaySpeed:1500,
+    speed: 300,
+    margin:16,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    
+  });
   $('.sp_noi_bat_list').slick({
     dots: false,
     infinite: true,
+    autoplay:true,
+    autoplaySpeed:1500,
     speed: 300,
     margin:16,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     responsive: [
         {
           breakpoint: 1024,
@@ -53,6 +66,8 @@ $(".cate_choices").click(function(){
 
   $('.intro_slide').slick({
     dots: false,
+    autoplay:true,
+    autoplaySpeed:500,
     infinite: true,
     speed: 300,
     slidesToShow: 3,
@@ -89,7 +104,8 @@ $(".cate_choices").click(function(){
   $('.list_services').slick({
     dots: false,
     infinite: true,
-    speed: 300,
+    autoplay:true,
+    autoplaySpeed:1000,
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow: false,
@@ -118,7 +134,7 @@ $(".cate_choices").click(function(){
     dots: false,
     infinite: true,
     speed: 300,
-    slidesToShow: 4,
+    slidesToShow: 6,
     slidesToScroll: 1,
     prevArrow: false,
     nextArrow: false,
@@ -126,7 +142,7 @@ $(".cate_choices").click(function(){
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 4,
             slidesToScroll: 1,
             infinite: true,
             dots: false
@@ -152,8 +168,10 @@ $(".cate_choices").click(function(){
   $('.news_list').slick({
     dots: false,
     infinite: true,
+    autoplay:true,
+    autoplaySpeed:1000,
     speed: 300,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow: false,
     nextArrow: false,
@@ -161,7 +179,7 @@ $(".cate_choices").click(function(){
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 4,
             slidesToScroll: 1,
             infinite: true,
             dots: false
@@ -187,6 +205,7 @@ $(".cate_choices").click(function(){
   $('.list_topic').slick({
     dots: false,
     infinite: true,
+    
     speed: 300,
     slidesToShow: 6,
     slidesToScroll: 1,
@@ -218,4 +237,20 @@ $(".cate_choices").click(function(){
         }
         
       ]
+  });
+
+  // change img
+  $(".slider-single").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    asNavFor: ".slider-nav",
+  });
+  $(".slider-nav").slick({
+    autoplay: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: ".slider-single",
+    dots: false,
+    focusOnSelect: true
   });
