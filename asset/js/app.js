@@ -20,7 +20,7 @@ $(".cate_choices").click(function(){
     slidesToScroll: 1,
     
   });
-  $('.sp_noi_bat_list').slick({
+  $('.sp_noi_bat_list').slick({ 
     dots: false,
     infinite: true,
     autoplay:true,
@@ -33,7 +33,7 @@ $(".cate_choices").click(function(){
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 4,
+            slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true,
             prevArrow: false,
@@ -43,7 +43,7 @@ $(".cate_choices").click(function(){
         {
             breakpoint: 600,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 2,
               slidesToScroll: 1,
               prevArrow: false,
               nextArrow: false,
@@ -154,7 +154,7 @@ $(".cate_choices").click(function(){
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1,
             infinite: true,
             dots: false
@@ -256,7 +256,7 @@ $(".cate_choices").click(function(){
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 4,
             slidesToScroll: 1,
             infinite: true,
             dots: false
@@ -265,7 +265,7 @@ $(".cate_choices").click(function(){
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 3,
             slidesToScroll: 2
           }
         },
