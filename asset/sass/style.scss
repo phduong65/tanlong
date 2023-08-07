@@ -79,6 +79,7 @@ body {
         }
 
         @media (max-width: $xs-max) {
+            padding: 8px 0;
             flex-direction: column;
             .contact{
                 flex-direction: column;
@@ -424,7 +425,6 @@ body {
 }
 
 .service {
-    padding-bottom: 0;
     .list_services {
         display: flex;
         flex-direction: row;
@@ -976,7 +976,6 @@ body {
     @media (max-width: $xs-max) {
         display: block;
         .slick-slider {
-            margin:0 -10px !important;
         }
         .slick-slide {
             text-align:left !important;

@@ -133,6 +133,7 @@ body {
 }
 @media (max-width: 767px) {
   .header .top_header {
+    padding: 8px 0;
     flex-direction: column;
   }
   .header .top_header .contact {
@@ -413,9 +414,6 @@ body {
   width: 100%;
 }
 
-.service {
-  padding-bottom: 0;
-}
 .service .list_services {
   display: flex;
   flex-direction: row;
@@ -881,9 +879,6 @@ body {
 @media (max-width: 767px) {
   .san_pham_mb {
     display: block;
-  }
-  .san_pham_mb .slick-slider {
-    margin: 0 -10px !important;
   }
   .san_pham_mb .slick-slide {
     text-align: left !important;

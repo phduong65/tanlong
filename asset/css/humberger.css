@@ -94,7 +94,7 @@
   .navbar_humberger .menu-items {
     background-color: #4BB551;
     padding-top: 20px;
-    height: 100vh;
+    height: calc(100vh - 60px);
     width: 100%;
     transform: translate(-150%);
     display: flex;
